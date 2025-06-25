@@ -1,0 +1,89 @@
+{
+  "name": "thee-downloader",
+  "version": "1.0.0",
+  "description": "Advanced YouTube and multi-platform video/music downloader with enhanced features",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000",
+    "server": "node server/index.js",
+    "dev:full": "concurrently \"npm run server\" \"npm run dev\"",
+    "start": "npm run build && npm run server",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext ts,tsx --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "yt-dlp": "^1.0.0",
+    "@ffmpeg/ffmpeg": "^0.12.7",
+    "@ffmpeg/util": "^0.12.1",
+    "ytdl-core": "^4.11.5",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "uuid": "^9.0.1",
+    "ws": "^8.14.2",
+    "node-cron": "^3.0.3",
+    "compression": "^1.7.4",
+    "helmet": "^7.1.0",
+    "rate-limiter-flexible": "^3.0.8"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8",
+    "@vitejs/plugin-react": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@types/node": "^20.10.5",
+    "tailwindcss": "^3.3.6",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "lucide-react": "^0.303.0",
+    "framer-motion": "^10.16.16",
+    "concurrently": "^8.2.2",
+    "vitest": "^1.0.4",
+    "@vitest/ui": "^1.0.4",
+    "@vitest/coverage-v8": "^1.0.4",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5"
+  },
+  "keywords": [
+    "youtube-downloader",
+    "video-downloader",
+    "music-downloader",
+    "yt-dlp",
+    "ffmpeg",
+    "webassembly",
+    "pwa",
+    "react",
+    "typescript",
+    "vite",
+    "tailwindcss"
+  ],
+  "author": "Thee Downloader Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/thee-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/thee-downloader/issues"
+  },
+  "homepage": "https://github.com/yourusername/thee-downloader#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+} 
